@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* React Flow Custom Styles */
+.react-flow__node {
+  @apply border-2 border-gray-300 rounded-lg bg-white shadow-sm;
+}
+
+.react-flow__node.selected {
+  @apply border-blue-500 shadow-md;
+}
+
+.react-flow__edge-path {
+  stroke-width: 2;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3b82f6;
+  stroke-width: 3;
+}
+
+.react-flow__handle {
+  @apply w-3 h-3 bg-gray-400 border-2 border-white;
+}
+
+.react-flow__handle.connectable:hover {
+  @apply bg-blue-500;
+}
+
+.react-flow__handle-connecting {
+  @apply bg-blue-500;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+/* Custom Node Styles */
+.workflow-node {
+  @apply px-4 py-2 rounded-lg border-2 shadow-sm min-w-[120px] text-center;
+  transition: all 0.2s ease;
+}
+
+.workflow-node:hover {
+  @apply shadow-md scale-105;
+}
+
+.workflow-node.selected {
+  @apply ring-2 ring-blue-500 ring-offset-2;
+}
+
+.workflow-node-start {
+  @apply bg-green-100 border-green-500 text-green-800;
+}
+
+.workflow-node-end {
+  @apply bg-red-100 border-red-500 text-red-800;
+}
+
+.workflow-node-condition {
+  @apply bg-yellow-100 border-yellow-500 text-yellow-800;
+}
+
+.workflow-node-varvalue {
+  @apply bg-blue-100 border-blue-500 text-blue-800;
+}
+
+.workflow-node-datatypeconvert {
+  @apply bg-purple-100 border-purple-500 text-purple-800;
+}
+
+.workflow-node-callflow {
+  @apply bg-pink-100 border-pink-500 text-pink-800;
+}
+
+.workflow-node-error {
+  @apply bg-red-100 border-red-500 text-red-800;
+}
+
+.workflow-node-jsontojson {
+  @apply bg-cyan-100 border-cyan-500 text-cyan-800;
+}
+
+.workflow-node-http {
+  @apply bg-green-100 border-green-500 text-green-800;
+}
+
+.workflow-node-database {
+  @apply bg-gray-100 border-gray-500 text-gray-800;
+}
+
+.workflow-node-loop {
+  @apply bg-orange-100 border-orange-500 text-orange-800;
+}
+
+.workflow-node-parallel {
+  @apply bg-indigo-100 border-indigo-500 text-indigo-800;
+}
+
+/* Toolbar Styles */
+.toolbar {
+  @apply bg-white border-b border-gray-200 shadow-sm;
+}
+
+.toolbar-button {
+  @apply px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors;
+}
+
+.toolbar-button.active {
+  @apply bg-blue-100 text-blue-700;
+}
+
+/* Property Panel Styles */
+.property-panel {
+  @apply bg-white border-l border-gray-200 overflow-y-auto;
+}
+
+.property-section {
+  @apply p-4 border-b border-gray-100;
+}
+
+.property-section:last-child {
+  @apply border-b-0;
+}
+
+.property-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.property-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+}
+
+.property-textarea {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 resize-none;
+}
+
+.property-select {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-white;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  @apply bg-white border-r border-gray-200;
+}
+
+.sidebar-section {
+  @apply p-4 border-b border-gray-100;
+}
+
+.sidebar-section:last-child {
+  @apply border-b-0;
+}
+
+.sidebar-title {
+  @apply text-sm font-semibold text-gray-900 mb-3;
+}
+
+.node-template {
+  @apply flex items-center p-2 mb-2 bg-gray-50 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-100 transition-colors;
+}
+
+.node-template:hover {
+  @apply bg-blue-50 border-blue-300;
+}
+
+.node-template-icon {
+  @apply mr-2 text-gray-600;
+}
+
+.node-template-name {
+  @apply text-sm font-medium text-gray-700;
+}
+
+/* Loading Styles */
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
