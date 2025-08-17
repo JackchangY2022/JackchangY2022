@@ -1,0 +1,5675 @@
+{
+	"ID": "049FD372E4704F508D08AD2870D8B309",
+	"StartID": "CBB2F97AB84BD4BE0A8B8391398F645BD",
+	"ErrorID": "CF144E567CE494F3F9437514BBB75CABF",
+	"FlowName": "门诊登记",
+	"MaxParallel": 5,
+	"MaxQueueLength": 100,
+	"IgnoreNotify": false,
+	"ExecutionTimeoutSecond": 300,
+	"DisplayNodeContent": true,
+	"DataQueueType": 0,
+	"NotStartQueueSaveType": 0,
+	"RefFlowID": [
+		"D0F8729A8ACB460685DD309F480A95FF",
+		"2A1F56E6F519434781FB79CA9B16DAFA",
+		"02955D2ACC124241B5E97D657DA4778C",
+		"E5CCD5EB14984390ACB1699F05F814D8"
+	],
+	"Note": "",
+	"ProcessDic": {
+		"CBB2F97AB84BD4BE0A8B8391398F645BD": {
+			"Name": "开始",
+			"NextID": "CC28453BD02D04D67959BDC9014558154",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "START",
+			"TypeName": "开始",
+			"NodeType": 1,
+			"ID": "CBB2F97AB84BD4BE0A8B8391398F645BD",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"C0030BC370BAD486D913CA0365A71BCC5": {
+			"VarIDAndExpID": {
+				"9E1F23BEB81B49809EF0AAB369787DCB": "FC7D9FC58C24394A788DA630E887A654F6"
+			},
+			"Name": "服务输出",
+			"NextID": "CB693162F78B24914944E1425E8ACB7CD",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "VARVALUE",
+			"TypeName": "变量赋值",
+			"NodeType": 1,
+			"ID": "C0030BC370BAD486D913CA0365A71BCC5",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"CB693162F78B24914944E1425E8ACB7CD": {
+			"ReturnMsgID": "9E1F23BEB81B49809EF0AAB369787DCB",
+			"Name": "结束",
+			"NextID": "",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "END",
+			"TypeName": "结束",
+			"NodeType": 1,
+			"ID": "CB693162F78B24914944E1425E8ACB7CD",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"C18B160624A1141F9ADA93E899452A07C": {
+			"Nodes": {
+				"ChildNode": [
+					{
+						"ID": "3FCEAF2FED4E46D495132C81EF4A7254",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "cainfo",
+						"FixedValue": "",
+						"SpecialValue": "",
+						"RangeValue": "",
+						"SourceNodeName": "cainfo",
+						"Note": "",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "C691E4471B3B4E318E571C5CB2343FD7",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "dev_no",
+						"FixedValue": "",
+						"SpecialValue": "",
+						"RangeValue": "",
+						"SourceNodeName": "dev_no",
+						"Note": "",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "D9C953AC32E345DD8750A4DFDB4E955C",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "dev_safe_info",
+						"FixedValue": "",
+						"SpecialValue": "",
+						"RangeValue": "",
+						"SourceNodeName": "dev_safe_info",
+						"Note": "",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "53B770E6690C4B4487B36AE5ED1AC9AD",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "fixmedins_code",
+						"FixedValue": "",
+						"SpecialValue": "1D9A9B0F5EFF49139EAD77036CB1492F",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "H65042100011",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "C76F347617634B37ABF06BA7259855B6",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "fixmedins_name",
+						"FixedValue": "",
+						"SpecialValue": "93E1EFA383A14F32B28ED4F51754B9F5",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "鄯善县人民医院",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "C3A4452D85D64A38BFC6426285BED646",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "inf_time",
+						"FixedValue": "",
+						"SpecialValue": "85021EC8CE964A54839ECC222C06A3A6",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "2021-06-04 11:03:05",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "C3181F3F55BE47B6BC0AEE1AEEF06AC1",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "infno",
+						"FixedValue": "2201",
+						"SpecialValue": "",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "2201",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "EF92FBB6DFBB43929CDFF75E48BC0AF7",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "infver",
+						"FixedValue": "",
+						"SpecialValue": null,
+						"RangeValue": "",
+						"SourceNodeName": "infver",
+						"Note": "V1.0.1",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "180AF1A9E44F4E25857B3ABD67EE48B3",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": [
+							{
+								"ID": "I6bba935dccf5496681f7b127f7f2a4b6",
+								"PID": "180AF1A9E44F4E25857B3ABD67EE48B3",
+								"NodeName": "data",
+								"ChildNode": [
+									{
+										"ID": "Iff312c8889a94e57849210550bb2d43c",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "psn_no",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": null,
+										"SpecialValue": "BF9ED7AA4EBB487D917C0DC1059CB12A"
+									},
+									{
+										"ID": "I9b9e2ad29e324c71b7c98f70f3ecbe0a",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "mdtrt_cert_type",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "VoucherCategory",
+										"SpecialValue": null
+									},
+									{
+										"ID": "I545662b7be1947df852e8075cdc0125c",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "mdtrt_cert_no",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "VoucherCategoryCode",
+										"SpecialValue": null
+									},
+									{
+										"ID": "I38157693558b4a658b4d0ef0d7afd8ca",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "ipt_otp_no",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "HisSeenNo",
+										"SpecialValue": null
+									},
+									{
+										"ID": "I50b6bd8918c9479a822dba7606141706",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "insutype",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "InsureCategory",
+										"SpecialValue": null
+									},
+									{
+										"ID": "I23b5f1078ff7497e8aa378cbd7b13339",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "dr_name",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "AttendingPhysicianName",
+										"SpecialValue": null
+									},
+									{
+										"ID": "I9177ed23dad548878c55c1bf52f85300",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "dept_name",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "DepartmentName",
+										"SpecialValue": null
+									},
+									{
+										"ID": "Id1f3bcf3f6e74ba4a188f7a3a0733026",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "dept_code",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "\tDepartmentCode",
+										"SpecialValue": null
+									},
+									{
+										"ID": "Ibdb0d4d9a1af4b17accb86d79a0edbce",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "caty",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "SpecialDepartment",
+										"SpecialValue": null
+									},
+									{
+										"ID": "Ibb5b7bcbd3e0412ab5d76d87f57c5dec",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "begntime",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "SeenDate",
+										"SpecialValue": null
+									},
+									{
+										"ID": "Ic20dfb3c0da7479f82e5abd20d803ffe",
+										"PID": "I6bba935dccf5496681f7b127f7f2a4b6",
+										"NodeName": "atddr_no",
+										"ChildNode": null,
+										"DataType": 2,
+										"EmptyFiexValue": false,
+										"FixedValue": null,
+										"IsArray": false,
+										"NotNull": false,
+										"RangeValue": null,
+										"SourceNodeName": "AttendingPhysicianCode",
+										"SpecialValue": null
+									}
+								],
+								"DataType": 2,
+								"EmptyFiexValue": false,
+								"FixedValue": null,
+								"IsArray": false,
+								"NotNull": false,
+								"RangeValue": null,
+								"SourceNodeName": "OutpSeenRegisterIn",
+								"SpecialValue": null
+							}
+						],
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "input",
+						"FixedValue": "",
+						"SpecialValue": "",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "72D1AB2047AE430D8331E59907588AF4",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "insuplc_admdvs",
+						"FixedValue": "",
+						"SpecialValue": "8379104475CB4EE3A75F532FFD28F81A",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "650421",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "75DBD58DAB13448289371DD8D6F5605D",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "mdtrtarea_admvs",
+						"FixedValue": "",
+						"SpecialValue": "C6B1EDC190A545D29C87912305E0BD75",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "650421",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "F16F69D5288A4FE782EB0B00656F48E8",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "msgid",
+						"FixedValue": "",
+						"SpecialValue": "8BB7F756466844A29BA50DBBA03CF56B",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "H65042100011-20210604110305-91",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "50A002C8ADF841468DBA609EF53D0DE9",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "opter",
+						"FixedValue": "",
+						"SpecialValue": "332380548C854C6D8CF72ECEBEEC6F7F",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "U0830",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "28ABD7F624F0463C9CFEAF48452A174D",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "opter_name",
+						"FixedValue": "",
+						"SpecialValue": "8262C0DCA716487797A7F3A52142F66D",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "王兰",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "F4A7C25644D04063801FEA54FC6D5ED8",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "opter_type",
+						"FixedValue": "",
+						"SpecialValue": null,
+						"RangeValue": "",
+						"SourceNodeName": "opter_type",
+						"Note": "1",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "EA8A3A66CDAF405C856E72C677AB8E79",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "recer_sys_code",
+						"FixedValue": "",
+						"SpecialValue": null,
+						"RangeValue": "",
+						"SourceNodeName": "recer_sys_code",
+						"Note": "HIS",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "233640829A464CCEA8225AF33B819CE3",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "sign_no",
+						"FixedValue": "",
+						"SpecialValue": "DFB736C8FB6B4D0F9CB2B5109DBEE926",
+						"RangeValue": "",
+						"SourceNodeName": "",
+						"Note": "308011",
+						"FunctionSetting": null
+					},
+					{
+						"ID": "AB9084305413456A9269C459684E70BB",
+						"PID": "",
+						"IsArray": false,
+						"IsContent": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"DataType": 2,
+						"ChildNode": null,
+						"Annotation": null,
+						"DisplayName": null,
+						"NodeName": "signtype",
+						"FixedValue": "",
+						"SpecialValue": null,
+						"RangeValue": "",
+						"SourceNodeName": "signtype",
+						"Note": "SM3",
+						"FunctionSetting": null
+					},
+					{
+						"PID": "",
+						"id": "Icee8dc99a4574587a9ca4793d14bbd0f",
+						"DataType": 2,
+						"IsArray": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"NodeName": "serv_code",
+						"SourceNodeName": "serv_code",
+						"ID": "bfd2af42-660e-56cc-cea2-31e45498e44e",
+						"ChildNode": null
+					},
+					{
+						"PID": "",
+						"id": "Id349fe2fe0eb4ce58a8d9c3c2bb7bed3",
+						"DataType": 2,
+						"IsArray": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"NodeName": "serv_sign",
+						"SourceNodeName": "serv_sign",
+						"ID": "c7ca84a9-a7b1-4742-dfcb-2794ab995b41",
+						"ChildNode": null
+					}
+				],
+				"DataType": 0,
+				"DisplayName": "",
+				"EmptyFiexValue": false,
+				"FixedValue": "",
+				"FunctionSetting": null,
+				"ID": "",
+				"IsArray": false,
+				"IsContent": false,
+				"NodeName": "",
+				"NotNull": false,
+				"Note": "",
+				"PID": "",
+				"RangeValue": "",
+				"SourceNodeName": "",
+				"SpecialValue": ""
+			},
+			"MaxThreadCount": 0,
+			"WaitTimeOut": 0,
+			"RetrySetting": {
+				"RetryMethod": 0,
+				"RetryMaxNum": 3,
+				"RetryIntervalSecond": 5,
+				"MaxRetryIntervalSecond": 360,
+				"FailedOperation": 0,
+				"CallFlowID": "",
+				"CallFlowVarID": null,
+				"NotifyID": 0
+			},
+			"AsyncReturnMsg": null,
+			"AsyncPerformance": false,
+			"VarIDAndExpID": {},
+			"Name": "2201入",
+			"NextID": "CCA5D5677C9534E408E63E95BD4B51BC4",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "JsonToJson",
+			"TypeName": "Json转Json",
+			"IsEditControl": true,
+			"NodeType": 0,
+			"SourceVarID": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+			"OutVarID": "92D983E4B94C4B7EBC5D3AAB1EDCB37B",
+			"ID": "C18B160624A1141F9ADA93E899452A07C",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"C39A11BB431E24AB8B53FE472F7EED7EB": {
+			"Nodes": {
+				"ChildNode": [
+					{
+						"PID": "",
+						"id": "Ibf56388d33fb47698f4d8fe56df1bb3b",
+						"DataType": 2,
+						"IsArray": false,
+						"EmptyFiexValue": false,
+						"NotNull": false,
+						"NodeName": "OutpSeenRegisterOut",
+						"ID": "c6c7c909-fd64-b247-db4e-bbe9a9715ca2",
+						"SourceNodeName": "output.data",
+						"ChildNode": [
+							{
+								"PID": "c6c7c909-fd64-b247-db4e-bbe9a9715ca2",
+								"id": "I90dbba00869f4d748a912c7e2fec58ee",
+								"DataType": 2,
+								"IsArray": false,
+								"EmptyFiexValue": false,
+								"NotNull": false,
+								"NodeName": "InsuranceSeenNo",
+								"ID": "c175194e-d675-63ab-e8e9-8833beff3ae7",
+								"SourceNodeName": "mdtrt_id",
+								"Note": "医保就诊号",
+								"ChildNode": null
+							},
+							{
+								"PID": "c6c7c909-fd64-b247-db4e-bbe9a9715ca2",
+								"id": "I2a1560a1637044248ae7ada72e8bbb25",
+								"DataType": 2,
+								"IsArray": false,
+								"EmptyFiexValue": false,
+								"NotNull": false,
+								"NodeName": "InsuranceNo",
+								"ID": "c4656e42-e45a-a0d6-c184-3c0711a53976",
+								"SourceNodeName": "psn_no",
+								"Note": "医保号",
+								"ChildNode": null
+							},
+							{
+								"PID": "c6c7c909-fd64-b247-db4e-bbe9a9715ca2",
+								"id": "Ice69fc4266574c4e8e747a06f6dd80e2",
+								"DataType": 2,
+								"IsArray": false,
+								"EmptyFiexValue": false,
+								"NotNull": false,
+								"NodeName": "HisSeenNo",
+								"ID": "73edaae8-83d1-e491-d173-8e3613c55ea3",
+								"SourceNodeName": "ipt_otp_no",
+								"Note": "HIS就诊号",
+								"ChildNode": null
+							}
+						]
+					}
+				],
+				"DataType": 0,
+				"DisplayName": "",
+				"EmptyFiexValue": false,
+				"FixedValue": "",
+				"FunctionSetting": null,
+				"ID": "",
+				"IsArray": false,
+				"IsContent": false,
+				"NodeName": "",
+				"NotNull": false,
+				"Note": "",
+				"PID": "",
+				"RangeValue": "",
+				"SourceNodeName": "",
+				"SpecialValue": ""
+			},
+			"MaxThreadCount": 0,
+			"WaitTimeOut": 0,
+			"RetrySetting": {
+				"RetryMethod": 0,
+				"RetryMaxNum": 3,
+				"RetryIntervalSecond": 5,
+				"MaxRetryIntervalSecond": 360,
+				"FailedOperation": 0,
+				"CallFlowID": "",
+				"CallFlowVarID": null,
+				"NotifyID": 0
+			},
+			"AsyncReturnMsg": null,
+			"AsyncPerformance": false,
+			"VarIDAndExpID": {},
+			"Name": "2201出",
+			"NextID": "C0030BC370BAD486D913CA0365A71BCC5",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "JsonToJson",
+			"TypeName": "Json转Json",
+			"IsEditControl": true,
+			"NodeType": 0,
+			"SourceVarID": "277D3F273CE8494C8CE5F0F3C23AA4B2",
+			"OutVarID": "5480c2fb42d94b66859b7bcb248ed8bb",
+			"ID": "C39A11BB431E24AB8B53FE472F7EED7EB",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"CCA5D5677C9534E408E63E95BD4B51BC4": {
+			"VarIDAndExpID": {
+				"E285D4FD944A4D4D89B5EF685429E31B": "FCD9E62A815AAD4B5B9BEA48896DD52E8E"
+			},
+			"Name": "变量赋值",
+			"NextID": "CBC70D0FDADA5426DAC6440E84C905445",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "VARVALUE",
+			"TypeName": "变量赋值",
+			"NodeType": 1,
+			"ID": "CCA5D5677C9534E408E63E95BD4B51BC4",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"C397201582EA4454B8C5FFCD5001C9105": {
+			"FalseID": "CDD331AAF87114BB69A18BA870A72F84E",
+			"FunctionName": "FC8DF2AB68F33D40C88A4D80F9AFCE4ED5",
+			"Name": "条件判断",
+			"NextID": "C7029C8451993440EA4DC3302D97E9A3F",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "CONDITION",
+			"TypeName": "条件判断",
+			"NodeType": 1,
+			"ID": "C397201582EA4454B8C5FFCD5001C9105",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"C7029C8451993440EA4DC3302D97E9A3F": {
+			"IgnoreEmpty": false,
+			"MaxThreadCount": 0,
+			"WaitTimeOut": 0,
+			"RetrySetting": {
+				"RetryMethod": 0,
+				"RetryMaxNum": 3,
+				"RetryIntervalSecond": 5,
+				"MaxRetryIntervalSecond": 360,
+				"FailedOperation": 0,
+				"CallFlowID": "",
+				"CallFlowVarID": "",
+				"NotifyID": ""
+			},
+			"AsyncReturnMsg": "",
+			"AsyncPerformance": false,
+			"VarIDAndExpID": {},
+			"Name": "类型转换",
+			"NextID": "C39A11BB431E24AB8B53FE472F7EED7EB",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"ProcType": 1,
+			"TypeCode": "DATATYPECONVERT",
+			"TypeName": "类型转换",
+			"InDataType": 2,
+			"OutDataType": 33,
+			"OldOutDataType": 0,
+			"OldInDataType": 0,
+			"IsEditControl": true,
+			"NodeType": 0,
+			"SourceVarID": "4B65048041F947A59A3502788432BA1C",
+			"OutVarID": "277D3F273CE8494C8CE5F0F3C23AA4B2",
+			"ID": "C7029C8451993440EA4DC3302D97E9A3F",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"CC28453BD02D04D67959BDC9014558154": {
+			"VarIDAndExpID": {
+				"DDD4EB7310AF45D2A8AC5FA5DEBA44FB": "FCE711E2FAED574A4A89F667CDD4082232",
+				"332380548C854C6D8CF72ECEBEEC6F7F": "FC2DD2DC0D0ADE4BD9BE231055ED6966D2",
+				"8262C0DCA716487797A7F3A52142F66D": "FC4FEDEC22A8014F31A8FE9E1757E15303",
+				"1D9A9B0F5EFF49139EAD77036CB1492F": "FCF8D089C2A4EF4FB6B5A77A85872268E3",
+				"93E1EFA383A14F32B28ED4F51754B9F5": "FC6A4D18CD12374360B803AC5C7830409C",
+				"8379104475CB4EE3A75F532FFD28F81A": "FCC80C062F417346609607B35AF653512F",
+				"8BB7F756466844A29BA50DBBA03CF56B": "FC3442EF11D4FA48DB95319A064101904D",
+				"85021EC8CE964A54839ECC222C06A3A6": "FC167934B024F540B3B19919A18BD49910",
+				"DFB736C8FB6B4D0F9CB2B5109DBEE926": "FCD923386DDF6548C9A07982AD834262B0",
+				"BF9ED7AA4EBB487D917C0DC1059CB12A": "FC845B9AA76D1140A49B4E42A61DEF30E1",
+				"56822A65A04F4950B159D8922CDAFB5C": "FC1B0492F6AC56471C809D3010512B2451",
+				"C49F033ADE7B4B3B8F9A43DAA9FFBF64": "FC81FDAC0E54D44CFB886A39BB6ACAA16D",
+				"C6B1EDC190A545D29C87912305E0BD75": "FCBC66D64083664926880CD1BD51F92AD5",
+				"024DBFF3CA804B0AB607E8952E85FC56": "FC334E5136AAD14703814F5C02C2491202",
+				"89f29c9a814141fc87237ed22f17f3df": "FC78973c05d190415783c78f597ba62746"
+			},
+			"Name": "变量赋值",
+			"NextID": "Cc38f0385241c4505ba333dd0782f16c8",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "VARVALUE",
+			"TypeName": "变量赋值",
+			"NodeType": 1,
+			"ID": "CC28453BD02D04D67959BDC9014558154",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"CF144E567CE494F3F9437514BBB75CABF": {
+			"ReturnMsgID": "9E5515061B0E48D693FAD56997E2339B",
+			"Name": "异常",
+			"NextID": "CE584F5CE9A5F4C4A980135B289048A2A",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "ERROR",
+			"TypeName": "异常",
+			"NodeType": 1,
+			"ID": "CF144E567CE494F3F9437514BBB75CABF"
+		},
+		"CBC70D0FDADA5426DAC6440E84C905445": {
+			"FlowID": "D0F8729A8ACB460685DD309F480A95FF",
+			"FlowName": "三方访问方法",
+			"OutVarID": "99F15340559441038AC15FF633CA90A1",
+			"FlowVarContrast": {
+				"E285D4FD944A4D4D89B5EF685429E31B": "A201C3A3A2554674BD35956729D4D2CB",
+				"56822A65A04F4950B159D8922CDAFB5C": "7BAEB025B7334F79951486533C3000A7"
+			},
+			"FlowOutVar": {},
+			"Asynchronous": false,
+			"Name": "2201",
+			"NextID": "C732A3327E6F64A31A3615C907ED2325D",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "CALLFLOW",
+			"TypeName": "调用流程",
+			"NodeType": 1,
+			"ID": "CBC70D0FDADA5426DAC6440E84C905445",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"C732A3327E6F64A31A3615C907ED2325D": {
+			"VarIDAndExpID": {
+				"0744E3F2638B4443822B50BC4589BC99": "FCE23D8EBD4BE54B82A8C507A0199D16B7",
+				"4B65048041F947A59A3502788432BA1C": "FC569452A7B235473D91B47732ABAE4E3C"
+			},
+			"Name": "变量赋值",
+			"NextID": "C397201582EA4454B8C5FFCD5001C9105",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "VARVALUE",
+			"TypeName": "变量赋值",
+			"NodeType": 1,
+			"ID": "C732A3327E6F64A31A3615C907ED2325D",
+			"Color": "rgba(0, 0, 0, 1)"
+		},
+		"CDD331AAF87114BB69A18BA870A72F84E": {
+			"FlowID": "2A1F56E6F519434781FB79CA9B16DAFA",
+			"FlowName": "错误信息构造",
+			"OutVarID": "99F15340559441038AC15FF633CA90A1",
+			"FlowVarContrast": {
+				"4B65048041F947A59A3502788432BA1C": "500EFFEBF74F47C1A719A0336A1ABF3D",
+				"C49F033ADE7B4B3B8F9A43DAA9FFBF64": "1CBB77C1F19E4407B7F398854816110F"
+			},
+			"FlowOutVar": {},
+			"Asynchronous": false,
+			"Name": "错误构造",
+			"NextID": "C9FE350762ADE41F49BE2EA2E3299B73B",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "CALLFLOW",
+			"TypeName": "调用流程",
+			"NodeType": 1,
+			"ID": "CDD331AAF87114BB69A18BA870A72F84E"
+		},
+		"C9FE350762ADE41F49BE2EA2E3299B73B": {
+			"IgnoreEmpty": false,
+			"MaxThreadCount": 0,
+			"WaitTimeOut": 0,
+			"RetrySetting": {
+				"RetryMethod": 0,
+				"RetryMaxNum": 3,
+				"RetryIntervalSecond": 5,
+				"MaxRetryIntervalSecond": 360,
+				"FailedOperation": 0,
+				"CallFlowID": "",
+				"CallFlowVarID": "",
+				"NotifyID": ""
+			},
+			"AsyncReturnMsg": "",
+			"AsyncPerformance": false,
+			"VarIDAndExpID": {},
+			"Name": "类型转换",
+			"NextID": "CB693162F78B24914944E1425E8ACB7CD",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"ProcType": 1,
+			"TypeCode": "DATATYPECONVERT",
+			"TypeName": "类型转换",
+			"InDataType": 2,
+			"OutDataType": 33,
+			"OldOutDataType": 0,
+			"OldInDataType": 0,
+			"IsEditControl": true,
+			"NodeType": 0,
+			"SourceVarID": "99F15340559441038AC15FF633CA90A1",
+			"OutVarID": "9E1F23BEB81B49809EF0AAB369787DCB",
+			"ID": "C9FE350762ADE41F49BE2EA2E3299B73B"
+		},
+		"CE584F5CE9A5F4C4A980135B289048A2A": {
+			"FlowID": "02955D2ACC124241B5E97D657DA4778C",
+			"FlowName": "异常信息构造",
+			"OutVarID": "99F15340559441038AC15FF633CA90A1",
+			"FlowVarContrast": {
+				"9E5515061B0E48D693FAD56997E2339B": "500EFFEBF74F47C1A719A0336A1ABF3D",
+				"C49F033ADE7B4B3B8F9A43DAA9FFBF64": "1CBB77C1F19E4407B7F398854816110F"
+			},
+			"FlowOutVar": {},
+			"Asynchronous": false,
+			"Name": "异常构造",
+			"NextID": "C9FE350762ADE41F49BE2EA2E3299B73B",
+			"PreviousID": [],
+			"ErrorID": "",
+			"RunRefVarID": null,
+			"TypeCode": "CALLFLOW",
+			"TypeName": "调用流程",
+			"NodeType": 1,
+			"ID": "CE584F5CE9A5F4C4A980135B289048A2A"
+		},
+		"Cc38f0385241c4505ba333dd0782f16c8": {
+			"ID": "Cc38f0385241c4505ba333dd0782f16c8",
+			"Name": "公共报文格式",
+			"TypeCode": "CALLFLOW",
+			"TypeName": "调用流程",
+			"Verify": false,
+			"Color": "rgba(0, 0, 0, 1)",
+			"FlowID": "E5CCD5EB14984390ACB1699F05F814D8",
+			"Asynchronous": false,
+			"Embedded": false,
+			"FlowVarContrast": {
+				"DDD4EB7310AF45D2A8AC5FA5DEBA44FB": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB"
+			},
+			"FlowOutVar": {
+				"DDD4EB7310AF45D2A8AC5FA5DEBA44FB": "9E1F23BEB81B49809EF0AAB369787DCB"
+			},
+			"NextID": "C18B160624A1141F9ADA93E899452A07C",
+			"PreviousID": []
+		}
+	},
+	"VariableDic": {
+		"F5454BB30EE9404C8805CB329616766A": {
+			"Id": "F5454BB30EE9404C8805CB329616766A",
+			"Text": "数据开始日期",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"B38E108379DB427DAE6A84F6AF5AC3F6": {
+			"Id": "B38E108379DB427DAE6A84F6AF5AC3F6",
+			"Text": "数据结束日期",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"E285D4FD944A4D4D89B5EF685429E31B": {
+			"Id": "E285D4FD944A4D4D89B5EF685429E31B",
+			"Text": "P_S_INPUTDATA",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"4B65048041F947A59A3502788432BA1C": {
+			"Id": "4B65048041F947A59A3502788432BA1C",
+			"Text": "P_S_OUTPUTDATA",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"0744E3F2638B4443822B50BC4589BC99": {
+			"Id": "0744E3F2638B4443822B50BC4589BC99",
+			"Text": "P_S_RESULT",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"277D3F273CE8494C8CE5F0F3C23AA4B2": {
+			"Id": "277D3F273CE8494C8CE5F0F3C23AA4B2",
+			"Text": "P_J_2401Output",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 33,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"207194D907154F4195BDAA5EC2AED7B7": {
+			"Id": "207194D907154F4195BDAA5EC2AED7B7",
+			"Text": "P_J_2401返回",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 33,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"92D983E4B94C4B7EBC5D3AAB1EDCB37B": {
+			"Id": "92D983E4B94C4B7EBC5D3AAB1EDCB37B",
+			"Text": "P_J_2401Input",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 33,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"DDD4EB7310AF45D2A8AC5FA5DEBA44FB": {
+			"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+			"Text": "P_J_Input",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 33,
+			"DefaultValue": "",
+			"Parameter": null
+		},
+		"332380548C854C6D8CF72ECEBEEC6F7F": {
+			"Id": "332380548C854C6D8CF72ECEBEEC6F7F",
+			"Text": "P_S_AgentCode",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"8262C0DCA716487797A7F3A52142F66D": {
+			"Id": "8262C0DCA716487797A7F3A52142F66D",
+			"Text": "P_S_AgentName",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"1D9A9B0F5EFF49139EAD77036CB1492F": {
+			"Id": "1D9A9B0F5EFF49139EAD77036CB1492F",
+			"Text": "P_S_HospitalNo",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"93E1EFA383A14F32B28ED4F51754B9F5": {
+			"Id": "93E1EFA383A14F32B28ED4F51754B9F5",
+			"Text": "P_S_HospitalName",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"8379104475CB4EE3A75F532FFD28F81A": {
+			"Id": "8379104475CB4EE3A75F532FFD28F81A",
+			"Text": "P_S_RegionDivideCode",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"8BB7F756466844A29BA50DBBA03CF56B": {
+			"Id": "8BB7F756466844A29BA50DBBA03CF56B",
+			"Text": "P_S_MSGID",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"85021EC8CE964A54839ECC222C06A3A6": {
+			"Id": "85021EC8CE964A54839ECC222C06A3A6",
+			"Text": "P_S_INFTIME",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"DFB736C8FB6B4D0F9CB2B5109DBEE926": {
+			"Id": "DFB736C8FB6B4D0F9CB2B5109DBEE926",
+			"Text": "P_S_SignInNo",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"9E1F23BEB81B49809EF0AAB369787DCB": {
+			"Id": "9E1F23BEB81B49809EF0AAB369787DCB",
+			"Text": "P_J_Output",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 33,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"9E5515061B0E48D693FAD56997E2339B": {
+			"Id": "9E5515061B0E48D693FAD56997E2339B",
+			"Text": "P_S_ERRMSG",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"BF9ED7AA4EBB487D917C0DC1059CB12A": {
+			"Id": "BF9ED7AA4EBB487D917C0DC1059CB12A",
+			"Text": "P_S_InsuranceNo",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"C9F0333F98EE4FFF8F9E21598D4587F4": {
+			"Id": "C9F0333F98EE4FFF8F9E21598D4587F4",
+			"Text": "P_S_InsuranceSeenNo",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"D21D0E50A5AB41F5935306FC096BCBCF": {
+			"Id": "D21D0E50A5AB41F5935306FC096BCBCF",
+			"Text": "P_S_BalanceNo",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"5B4892F3D3D24475B2B11FEAFFD5F31E": {
+			"Id": "5B4892F3D3D24475B2B11FEAFFD5F31E",
+			"Text": "P_S_InsuranceSetlNo",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"99F15340559441038AC15FF633CA90A1": {
+			"Id": "99F15340559441038AC15FF633CA90A1",
+			"Text": "P_S_OUTPUT",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"56822A65A04F4950B159D8922CDAFB5C": {
+			"Id": "56822A65A04F4950B159D8922CDAFB5C",
+			"Text": "P_S_INIT",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"C49F033ADE7B4B3B8F9A43DAA9FFBF64": {
+			"Id": "C49F033ADE7B4B3B8F9A43DAA9FFBF64",
+			"Text": "P_S_BUSINAME",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"C6B1EDC190A545D29C87912305E0BD75": {
+			"Id": "C6B1EDC190A545D29C87912305E0BD75",
+			"Text": "P_S_MRegionDivideCode",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"024DBFF3CA804B0AB607E8952E85FC56": {
+			"Id": "024DBFF3CA804B0AB607E8952E85FC56",
+			"Text": "P_S_MSGID_TMP",
+			"IsNotes": false,
+			"ContentType": 0,
+			"DataType": 2,
+			"DefaultValue": null,
+			"Parameter": null
+		},
+		"d0cc9177dd074598bf0bbc582d38ab3d": {
+			"Id": "d0cc9177dd074598bf0bbc582d38ab3d",
+			"Text": "P_J_2201Output",
+			"ContentType": 0,
+			"DataType": 33
+		},
+		"5480c2fb42d94b66859b7bcb248ed8bb": {
+			"Id": "5480c2fb42d94b66859b7bcb248ed8bb",
+			"Text": "P_J_2201返回",
+			"ContentType": 0,
+			"DataType": 33
+		},
+		"dffcba68f8f440c9bcbd85213da1f206": {
+			"Id": "dffcba68f8f440c9bcbd85213da1f206",
+			"Text": "P_J_2201Input",
+			"ContentType": 0,
+			"DataType": 33
+		},
+		"89f29c9a814141fc87237ed22f17f3df": {
+			"Id": "89f29c9a814141fc87237ed22f17f3df",
+			"Text": "P_S_HisSeenNo",
+			"ContentType": 0,
+			"DataType": 2
+		}
+	},
+	"VarSetting": {
+		"F5454BB30EE9404C8805CB329616766A": {
+			"name": "数据开始日期",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"B38E108379DB427DAE6A84F6AF5AC3F6": {
+			"name": "数据结束日期",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"E285D4FD944A4D4D89B5EF685429E31B": {
+			"name": "P_S_INPUTDATA",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"4B65048041F947A59A3502788432BA1C": {
+			"name": "P_S_OUTPUTDATA",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"0744E3F2638B4443822B50BC4589BC99": {
+			"name": "P_S_RESULT",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"277D3F273CE8494C8CE5F0F3C23AA4B2": {
+			"name": "P_J_2401Output",
+			"DataType": 33,
+			"LifeCycle": "单次",
+			"JsonNodes": [
+				{
+					"ID": "6BA55F93737942B5BE8749F33363A2DE",
+					"PID": null,
+					"Name": "output",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "4198D70DCCFA43BDB06FAC116F9193DD",
+							"PID": "6BA55F93737942B5BE8749F33363A2DE",
+							"Name": "result",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "D718CB9DE0E4485AB891164AD421518C",
+									"PID": "4198D70DCCFA43BDB06FAC116F9193DD",
+									"Name": "mdtrt_id",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "650420210604000062169715",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "0E14C804AC3F444391C369FD5BB2D671",
+					"PID": null,
+					"Name": "infcode",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "0",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "73279DA1EED1471892946629158A1409",
+					"PID": null,
+					"Name": "warn_msg",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "AC003B911F7F48AD971B795669032695",
+					"PID": null,
+					"Name": "cainfo",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "EC9BC125018445C7AF301A0E0825A8D6",
+					"PID": null,
+					"Name": "err_msg",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "success",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "91C3BBBF19AE49A6AED4B8FF3389A575",
+					"PID": null,
+					"Name": "refmsg_time",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "F858123BF9AC4B63A52ED91F454FA138",
+					"PID": null,
+					"Name": "signtype",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "91CFD05A6DBB4C04B99B6326921B7169",
+					"PID": null,
+					"Name": "respond_time",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "C1B1D984802F4FD99CF9B08D982C81F9",
+					"PID": null,
+					"Name": "inf_refmsgid",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "650421202106041105490014918838",
+					"Annotation": null,
+					"Nodes": null
+				}
+			],
+			"Strsplit": {}
+		},
+		"207194D907154F4195BDAA5EC2AED7B7": {
+			"name": "P_J_2401返回",
+			"DataType": 33,
+			"LifeCycle": "单次",
+			"JsonNodes": [
+				{
+					"ID": "FDBA749E56E84D4C84BFC30773D8A882",
+					"PID": null,
+					"Name": "InpSeenRegisterOut",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "041B8B2FB9084D6F8F53B42A43529C86",
+							"PID": "FDBA749E56E84D4C84BFC30773D8A882",
+							"Name": "InsuranceSeenNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医保就诊号",
+							"Annotation": null,
+							"Nodes": null
+						}
+					]
+				}
+			],
+			"Strsplit": {}
+		},
+		"92D983E4B94C4B7EBC5D3AAB1EDCB37B": {
+			"name": "P_J_2401Input",
+			"DataType": 33,
+			"LifeCycle": "单次",
+			"JsonNodes": [
+				{
+					"ID": "C3181F3F55BE47B6BC0AEE1AEEF06AC1",
+					"PID": null,
+					"Name": "infno",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "2401",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "F16F69D5288A4FE782EB0B00656F48E8",
+					"PID": null,
+					"Name": "msgid",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "H65042100011-20210604110305-91",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "75DBD58DAB13448289371DD8D6F5605D",
+					"PID": null,
+					"Name": "mdtrtarea_admvs",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "650421",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "72D1AB2047AE430D8331E59907588AF4",
+					"PID": null,
+					"Name": "insuplc_admdvs",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "650421",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "EA8A3A66CDAF405C856E72C677AB8E79",
+					"PID": null,
+					"Name": "recer_sys_code",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "HIS",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "C691E4471B3B4E318E571C5CB2343FD7",
+					"PID": null,
+					"Name": "dev_no",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "D9C953AC32E345DD8750A4DFDB4E955C",
+					"PID": null,
+					"Name": "dev_safe_info",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "3FCEAF2FED4E46D495132C81EF4A7254",
+					"PID": null,
+					"Name": "cainfo",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "AB9084305413456A9269C459684E70BB",
+					"PID": null,
+					"Name": "signtype",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "SM3",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "EF92FBB6DFBB43929CDFF75E48BC0AF7",
+					"PID": null,
+					"Name": "infver",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "V1.0.1",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "F4A7C25644D04063801FEA54FC6D5ED8",
+					"PID": null,
+					"Name": "opter_type",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "1",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "50A002C8ADF841468DBA609EF53D0DE9",
+					"PID": null,
+					"Name": "opter",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "U0830",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "28ABD7F624F0463C9CFEAF48452A174D",
+					"PID": null,
+					"Name": "opter_name",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "王兰",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "C3A4452D85D64A38BFC6426285BED646",
+					"PID": null,
+					"Name": "inf_time",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "2021-06-04 11:03:05",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "53B770E6690C4B4487B36AE5ED1AC9AD",
+					"PID": null,
+					"Name": "fixmedins_code",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "H65042100011",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "C76F347617634B37ABF06BA7259855B6",
+					"PID": null,
+					"Name": "fixmedins_name",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "鄯善县人民医院",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "233640829A464CCEA8225AF33B819CE3",
+					"PID": null,
+					"Name": "sign_no",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "308011",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "180AF1A9E44F4E25857B3ABD67EE48B3",
+					"PID": null,
+					"Name": "input",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "81E7E8C0DD884CA18096FC055AA0B710",
+							"PID": "180AF1A9E44F4E25857B3ABD67EE48B3",
+							"Name": "mdtrtinfo",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "685F7B301D8D4095AC8F3995C3D37A39",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "psn_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "65000004000000000030146490",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "EA51C3D9328042138D963817E99C781E",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "insutype",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "390",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D7FD097723804EAAADC715EA1469E2E1",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "coner_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "吐拉罕",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "DCCCD98CE7294518954E61E96D28FF25",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "tel",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "13394958255",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1505A78627444881915AED9B3D44510F",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "begntime",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2021-06-04 11:02:00",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4023230AB6AC4EBBB2F7BC61A845B1C9",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "mdtrt_cert_type",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "03",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "0EFA0B6156654AA49C140DFDFEB850B8",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "mdtrt_cert_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "K0382588X",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "8C823A43D0B74AF0B0FBE1AE8E54BE65",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "med_type",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "21",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4FCB0B1DFD264950BC46E7E5269515BE",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "ipt_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "202112977",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "172AADF76B694B08B74FED6738EF8414",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "medrcdno",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "4461544_4_5",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "9BEA774BB6B24FC998446EAC1E886A3F",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "atddr_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1024",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F8D21D07A1794E8982D7DFDC73BB34F9",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "chfpdr_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "曹向阳",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7B25D8D3648A420E82B83EF14BE3101D",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "adm_diag_dscr",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "高血压2级",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "01E21438AEB04BB4A7006CC77EB74907",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "adm_dept_codg",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2673",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "E4DC1D701DDD4AEFA76922ECC2D9613A",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "adm_dept_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "内三科",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7B9C5382C1B94E46A31C4177573BD64A",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "adm_bed",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "0",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "452899B5573A4059AD644E13026C4870",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "dscg_maindiag_code",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "I10.x04",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "08833E67A6B24A648A36CD4116AAF610",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "dscg_maindiag_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "高血压2级",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "AD76DB24C50D400BBBFA5AC2F4A46B24",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "main_cond_dscr",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "高血压2级",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "B65924D2FA2A49D1B4E10CF07621793E",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "dise_codg",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "2326F3A8C22D4132B2BEC9385668167E",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "dise_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "CDF84D6AFB9B437996EBE5DD3C1473D5",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "oprn_oprt_code",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "55157913959341068FE6022F7FA08AA0",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "oprn_oprt_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1B454759D37F4C98B1F440583D294599",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "fpsc_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "9595B602A7914057B6E2373896E2D86A",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "matn_type",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C6E31F0836024EEB8F8F22D151C28666",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "birctrl_type",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D143A36A80F64AD9BD2E910CB53EEAC8",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "latechb_flag",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "399ECF8A80574EB09150578A518EF7FC",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "geso_val",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "415BD98BACB14D709F28F509D05724BC",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "fetts",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "147286657C834EDB91113980758D3AAB",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "fetus_cnt",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "0F33AB1717DA40C38600CCC0862945F1",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "pret_flag",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "420EDC677F09460D9D3421E80D0B05B7",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "birctrl_matn_date",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "2FC514F7BFFC45F0B07C808A977B9032",
+									"PID": "81E7E8C0DD884CA18096FC055AA0B710",
+									"Name": "dise_type_code",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						},
+						{
+							"ID": "C3BCF1444CF54F288B113B6700030A64",
+							"PID": "180AF1A9E44F4E25857B3ABD67EE48B3",
+							"Name": "diseinfo",
+							"DataType": "文本",
+							"NodeType": "数组",
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "EB9E8EE4A31648868DC06AEDF4E9D7B2",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "psn_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "65000004000000000030146490",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "8C8D35C1BF5249C8A48ABC9CDBB9BF5C",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "diag_type",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "ACA309487E4D4347B2A78531E194A63E",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "maindiag_flag",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "39664DC83DEC4D369038B45520FD0A22",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "diag_srt_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D98FAACC823E4B968523FB3D9594E7E5",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "diag_code",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "I10.x04",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "245317BEEDBC41269AA49866781FE442",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "diag_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "高血压2级",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "27BF51B692724E9586B28C53029C83F3",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "adm_cond",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "0D0FF83AC34C444986BDDD3443E896C1",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "diag_dept",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "内三科",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "EEBDBFEB5BB54B79AD7F865F9C4D1D56",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "dise_dor_no",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1024",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "02F4ABCE0DD94DF6AB0908D1B5E510AF",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "dise_dor_name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "曹向阳",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "48D5662D33EC4F5481C83F8490BC5D6A",
+									"PID": "C3BCF1444CF54F288B113B6700030A64",
+									"Name": "diag_time",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2021-06-04 11:02:00",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						}
+					]
+				}
+			],
+			"Strsplit": {}
+		},
+		"DDD4EB7310AF45D2A8AC5FA5DEBA44FB": {
+			"name": "P_J_Input",
+			"DataType": 33,
+			"LifeCycle": "单次",
+			"JsonNodes": [
+				{
+					"ID": "D169E292EDC04764B591C689C3C68A10",
+					"PID": null,
+					"Name": "IdentifyIn",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "7711CB84858B4C87B7E99F7F6EEB59C6",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "AgentCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "000001",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "403BC72CED774F4E90952B76E5A9ABB9",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "AgentName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "系统管理员",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "145AEF3E8EBB4328809FFB672B874717",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "HospitalName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "中联医院信息系统（测试）",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "03D6F0F9E9114C1191457901BC4C5702",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "HospitalNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "H50010901049",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "4D8E59C732E045F88DC43C27B68AB93D",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "InsuranceCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "601",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "D75EEF3C6B5249DE97EE312A173051D3",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "VoucherCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "04BEEFE6E0DC48CD9703DC3A179C1F65",
+							"PID": "D169E292EDC04764B591C689C3C68A10",
+							"Name": "VoucherCategoryCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "",
+							"Annotation": null,
+							"Nodes": null
+						}
+					]
+				},
+				{
+					"ID": "471CD3824B9B485D887420CE73AC010F",
+					"PID": null,
+					"Name": "IdentifyOut",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "86A81D7AF2994E169799195E5D25D631",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "Age",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "36.3",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "0796E66FD8554F40850319F4A9CAB4DC",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "Birthday",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "1984-09-12",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "497B9A9971844F0EB168915A80733BC1",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "CardSn",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "A1F25162DFBD4B8CA3D78422CA5D5C23",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "CertNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "500110198409120036",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "0E6DDA345CFD45B2ACABEBCC98827CE2",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "CertType",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "01",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "BAC3A136F3574B58BAFF3CCD00F10686",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "EcToken",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "4ECB8D21FEB846458D1D8DE79787627F",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "IdetInfo",
+							"DataType": "文本",
+							"NodeType": "数组",
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "E2600E1768AA454287033A28AD6BA9DA",
+									"PID": "4ECB8D21FEB846458D1D8DE79787627F",
+									"Name": "EnjoyBenefitsActualEndDate",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "986B7554B71447C2BCBCF64EB5B255BA",
+									"PID": "4ECB8D21FEB846458D1D8DE79787627F",
+									"Name": "EnjoyBenefitsActualStartDate",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2021-05-18 04:05:00",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "14DD81770B774FB09F744BF7E93488FF",
+									"PID": "4ECB8D21FEB846458D1D8DE79787627F",
+									"Name": "Memo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "59E00CC70DA94EF096B1FA1C1EFD0E50",
+									"PID": "4ECB8D21FEB846458D1D8DE79787627F",
+									"Name": "PersonIdetType",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2610",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C69B699042184B358D049E0E30E2600C",
+									"PID": "4ECB8D21FEB846458D1D8DE79787627F",
+									"Name": "PersonIdetTypeName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F8A0A1D1D067447A959FABC4CE71DC4B",
+									"PID": "4ECB8D21FEB846458D1D8DE79787627F",
+									"Name": "PersonTypeLevel",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						},
+						{
+							"ID": "134D1DD62D1840F69128AD82126ECDCD",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "InsuInfo",
+							"DataType": "文本",
+							"NodeType": "数组",
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "6B7C7A03A9F94B2180CD46F6B6EA6E0F",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "AccountSurplus",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "0",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "A4C418F5E4D94382B6E41B1434F1A72C",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "CvlservFlag",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "0",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "322D4B9B693E4D0091A1DC8E11DB8648",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "CvlservFlagName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "否",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "68B13D8C7C71420690099B8FE541771B",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsureCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "310",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F22BA5800786465FB675DB78B288AA5D",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsureCategoryName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "职工基本医疗保险",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "77A4DB56022D4E398385D83572A9A3C7",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsuredStatus",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1C314B9C95CB48CC86EFB7A389AC41FC",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsuredTime",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2021-05-18",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "B1AC5347CA6C4AF2BFAA20844D4F85E8",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "PauseInsuredTime",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "72F70E124B7548DD925C82FB2BC24A94",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "RegionDivideCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "500143",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "996AB8B013A140818F98CEB6A2C60E66",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "StaffCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1103",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7BA47A5151E44BD08856EDB001000416",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "StaffCategoryName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "灵活就业人员在职",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "B50C05E9FBF047E0928A1CB9F0FA3FDF",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "UnitName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "万盛区个体参保虚拟单位",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "A652A8103A2E45B19A6AA14EFFF38E5E",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "AccountSurplus",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "0",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "0E734CC4560C47BE9AF3AF04B3C32FF7",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "CvlservFlag",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "0",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "DC3CCBDE397C4EBAB914C7E8996A8453",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "CvlservFlagName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "否",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "B926D422797542098A9C3D33BEF9C64E",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsureCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "390",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "06CA868B5FC04C94943C87E7DED36314",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsureCategoryName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "城乡居民基本医疗保险",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "E47C6CE943DD4A219241C56F31810F56",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsuredStatus",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "1",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "6DA884CE7D6347A9AE50B2EC87E139A3",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "InsuredTime",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "2018-12-19",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C728D0A1E8F24CF7A2744F98EC9C26D3",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "PauseInsuredTime",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "72C3A8E1EE824840883CF26B75AF58AB",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "RegionDivideCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "500143",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "33859DC531D649EB925CED5A7BD12E5A",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "StaffCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "15",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "5EE51BF8F5384DAEB71ADD94BE9D63F5",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "StaffCategoryName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "BEC51D6040904710BE709EB575580AAB",
+									"PID": "134D1DD62D1840F69128AD82126ECDCD",
+									"Name": "UnitName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "海棠社区",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						},
+						{
+							"ID": "DDE74D00B53948B3AF18F3F98FE66A13",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "InsuranceCardNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "E90083816",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "55E54F71B5CC453099D23BF3965AB4F5",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "InsuranceNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "JM1000018623",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "E77B6B8A5C134A39869866B58F0F0227",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "Name",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "秦正博",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "BE96787F0A8D4A90A443BAE506901865",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "Nationality",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "汉族",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "9BF6D14693BB4B69BC306B8F8CCAD970",
+							"PID": "471CD3824B9B485D887420CE73AC010F",
+							"Name": "Sex",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "男",
+							"Annotation": null,
+							"Nodes": null
+						}
+					]
+				},
+				{
+					"ID": "463E2614AB12454D8C35611CEE53D722",
+					"PID": null,
+					"Name": "InpSeenRegisterIn",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "8C46445190414E3F9F314A1B5F657AD2",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "InsuranceCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "保险类别",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "C231D373C37442BB9DC0EF780AABC0CA",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "AgentCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "经办人编码",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "880FF24C0D9046EFA02AAD14139080B3",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "AgentName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "经办人姓名",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "A2AC57CB539C4F9CA46FEC44311EA173",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "HospitalNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医院编号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "3A816269DEED4B298C6ECA2EC2E6B4B9",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "HospitalName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医院名称",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "D58C142977694FBF94AB23DC7679B338",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "RegionDivideCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "参保地医保区划",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "A19D5CFA364C43D99F52A330D4F2B636",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "InsuranceNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医保号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "1CFE7956CA2E449198172FAABCD4E728",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "InsureCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "险种类型",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "82E41E875DCA4EC9AB6AA348F292D4B2",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "ContactName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "联系人姓名",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "C278F462D99A4285AF0649048EFA16E6",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "ContactPhone",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "联系人电话",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "F6517C3537664BEBA3207FA70535FECC",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "SeenDate",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "就诊时间",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "95C125272C9F4AB5B41BE0C5BE5269D6",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "VoucherCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "就诊凭证类型",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "DF04CD8E700C4ECE8786E30283E262F8",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "VoucherCategoryCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "就诊凭证编号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "519FD0D986274C858F3B8EEBB135F90E",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "HealthCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医疗类别",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "1555D76486FF44308F62EAD12207F8CC",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "HisSeenNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "HIS就诊号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "EE05F44E785849E4B7DC418B1D1866EE",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "MedicalRecordNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "病历号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "329B9353D1324DDCA67E4FCD0D5A6FC8",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "AttendingPhysicianCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医师编码",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "75799A439A32482A9C9667E79C0E7FE6",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "AttendingPhysicianName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医师姓名",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "2FC4B661F6614A6F8F9F8F55B3943271",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "SymptomDescription",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "症状描述",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "25D0A0E6E6C24EB6A589712B4AEBE5BE",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "DepartmentCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "科室编码",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "782BA1AB9BD045FB8DA55B60C67E5FAA",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "DepartmentName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "科室名称",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "B75B99F2BB6B4510BD86D4F5361D599E",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "BedNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "床位号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "26FF7084E15F4A9190E2739636BCE080",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "MainDiagnoseCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "主诊断代码",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "B70DAB3D6DA54AF79CF35064137AF504",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "MainDiagnoseName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "主诊断名称",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "11EE09A784904970AF039ED3A07C534E",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "DiseaseCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "病种编码",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "7AF4A818444E48A7B4B277E1803FB366",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "DiseaseName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "病种名称",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "5075D5E2AAA5423598E7ABBE368C321A",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "OperationCode",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "手术操作代码",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "D89D744E5ACD4FC39411CCE072EC1746",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "OperationName",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "手术操作名称",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "C0DE1FCD71B24568A35421E06F5C7417",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "BirthCertificateNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "生育证号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "7EE848D4FD094FDF89A37D91C819856C",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "MaternityCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "生育类别",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "E56C37A3C78C4640B3FE7644F49E71CC",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "BirthControlOperCategory",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "计划生育手术类别",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "3FDFDB7FDDD34EF98BAC3464605CC400",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "LateBrithSign",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "晚育标志",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "42E0E8A6091A46CC9C5FA7DF54E1A157",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "GestationalWeek",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "孕周数",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "4E347A1BF6A5404F8DB355C33C5D1961",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "Parity",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "产次",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "616EC7765DEA440A89E6429423E168B8",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "FetusesQuantity",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "胎儿数",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "2592270F077440549CF4B1AE01591563",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "PretermBirthSign",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "早产标志",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "28A671C9174E441AB2ED20F03B74EABA",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "NewbornBirthday",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "计划生育手术或生育日期",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "B51F6230063D404795CC1CC5CB11DE6B",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "DiagnoseType",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "病种类型",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "F87E026048A744818052CBD95B57EBA9",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "InsuranceCardNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "医保卡号",
+							"Annotation": null,
+							"Nodes": null
+						},
+						{
+							"ID": "3364C67A8FCD4C339EAC84CB097510B8",
+							"PID": "463E2614AB12454D8C35611CEE53D722",
+							"Name": "DiseInfo",
+							"DataType": "文本",
+							"NodeType": "数组",
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "41AFD303F1B24EE5B20ADEDAE7273000",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "InsuranceNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "6C222C483DA6445B8378FEAFEF6B9613",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "86E7FCA93E53480C9ADB701D79186C2F",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "MainDiagnoseSign",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "主诊断标志",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "72C346E7AC5A4B8FAE8647DEF40F3A2D",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseSno",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断排序号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1AD22D5F32364867B0214A060AAC910C",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断代码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "DA225E3ED2D044688DCE69439624C2DD",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断名称",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4D5C996E3A764601AC4E39646BB4DF11",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "AdmissionIllness",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "入院病情",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "6338B335AA1442DAB3FE2E160F73A7BB",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseDept",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断科室",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4C32B203E4AE4DA4A685182680EA39C6",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseDorCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断医生编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F8DD3AA3FB2F424E9CABABC05F30FC7D",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseDorName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断医生姓名",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1D8559D0CE5A4AD29FF09C6E7973AFFB",
+									"PID": "3364C67A8FCD4C339EAC84CB097510B8",
+									"Name": "DiagnoseTime",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断时间",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "E714475B37D347B38AC8045D12966C50",
+					"PID": null,
+					"Name": "SignInOut",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "89E36825AFD04C6E8315CF8EBE5F8F7A",
+							"PID": "E714475B37D347B38AC8045D12966C50",
+							"Name": "SignInNo",
+							"DataType": "文本",
+							"NodeType": "节点",
+							"Code": "签到编号",
+							"Annotation": null,
+							"Nodes": null
+						}
+					]
+				}
+			],
+			"Strsplit": {}
+		},
+		"332380548C854C6D8CF72ECEBEEC6F7F": {
+			"name": "P_S_AgentCode",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"8262C0DCA716487797A7F3A52142F66D": {
+			"name": "P_S_AgentName",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"1D9A9B0F5EFF49139EAD77036CB1492F": {
+			"name": "P_S_HospitalNo",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"93E1EFA383A14F32B28ED4F51754B9F5": {
+			"name": "P_S_HospitalName",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"8379104475CB4EE3A75F532FFD28F81A": {
+			"name": "P_S_RegionDivideCode",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"8BB7F756466844A29BA50DBBA03CF56B": {
+			"name": "P_S_MSGID",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"85021EC8CE964A54839ECC222C06A3A6": {
+			"name": "P_S_INFTIME",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"DFB736C8FB6B4D0F9CB2B5109DBEE926": {
+			"name": "P_S_SignInNo",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"9E1F23BEB81B49809EF0AAB369787DCB": {
+			"name": "P_J_Output",
+			"DataType": 33,
+			"LifeCycle": "单次",
+			"JsonNodes": [
+				{
+					"ID": "5A100094A75A4F86A1908C649F63EA6E",
+					"PID": null,
+					"Name": "code",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "433A796FC7AB476D9655CA73D58B2325",
+					"PID": null,
+					"Name": "error",
+					"DataType": "文本",
+					"NodeType": "节点",
+					"Code": "",
+					"Annotation": null,
+					"Nodes": null
+				},
+				{
+					"ID": "F6BC297BA02F44E196D20CC328E42540",
+					"PID": null,
+					"Name": "data",
+					"DataType": "文本",
+					"NodeType": null,
+					"Code": null,
+					"Annotation": null,
+					"Nodes": [
+						{
+							"ID": "E947CB6A53644025B95F4C56488758F6",
+							"PID": "F6BC297BA02F44E196D20CC328E42540",
+							"Name": "OutpSeenRegisterIn",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "816ABF48822547B7B4AD527A8CB94191",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "InsuranceCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "保险类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D4ED72CC1AA24D08990DA659CCD0DB0A",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "AgentCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "经办人编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F24C9E580C2D466C8604D43038E0B569",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "AgentName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "经办人姓名",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D34FDB307FA34210A118621CE51B4473",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "HospitalNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院编号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7E729FAFE116468287951DF619333BC9",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "HospitalName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院名称",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "A390C4EA13EA4AAABBE683B92672EE16",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "InsuranceNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "8DC5325D5B584B26BE42245A00FBFC54",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "InsureCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "险种类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "53FB9ECD81364D44B76ED2F625D4092A",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "SeenDate",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "就诊时间",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "5F61C3E21FAA4291BD53A37C89739AE0",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "VoucherCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "就诊凭证类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "CA8D56C076A04107B14EA59FDAF22688",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "VoucherCategoryCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "就诊凭证编号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "A3D1D3BDEB4D4389A11414A500789D20",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "HisSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "HIS就诊号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C0D2126C5EBD4AECB8503496F20D5373",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "AttendingPhysicianCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医师编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "939E4F706D6E4A13AF6333803F13ECEF",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "AttendingPhysicianName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医师姓名",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D5C43628605148D992587917B425CADE",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "DepartmentCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "科室编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "97CB12B6E5F34C46B47F5EFFF513EE85",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "DepartmentName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "科室名称",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C93C85266C154F94B4FBE522405175AC",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "SpecialDepartment",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "科别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "EDAED10A5142417A8EE570AD718B4769",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "HealthCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医疗类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "32CC7B0CEAAB4663BCF8EC615812AC0E",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "SymptomDescription",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "症状描述",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "6922581B77124B49AE35BECBBE96993E",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "DiagnoseCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "96FB325AA60E41F580459EA221441D03",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "DiagnoseName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "诊断名称",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "3CCC05D7CAF349298E12860448E15A2A",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "BirthControlOperCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "计划生育手术类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F3DE4BECF2DE4407B891F665D4E75A04",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "NewbornBirthday",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "计划生育手术或生育日期",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "E7AFF7D8EAE249D2869C5FB39ED0E533",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "MaternityCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "生育类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "9226056927DF475F98B72A02A1DC5D90",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "GestationalWeek",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "孕周数",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+									"PID": "E947CB6A53644025B95F4C56488758F6",
+									"Name": "DiseInfo",
+									"DataType": "文本",
+									"NodeType": null,
+									"Code": null,
+									"Annotation": null,
+									"Nodes": [
+										{
+											"ID": "96C837DF6E8240ED9A4677E9C6813CE3",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseCategory",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断类别",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "5F6533B09D4F48C1B7766869EA4F8C20",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseSno",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断排序号",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "1F24D16B77A047EB9AB0083455D3D44E",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断代码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "EBC2D884BE6E4EE784EFA45A5E0B144C",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "2E48A2651F1549C6A5F9CA1D46324653",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseDept",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断科室",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "1A9B4D71B76F4CE48F47884F1AFC04DB",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseDorCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断医生编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "C12373512FFF44B4A65339CF2E38B2BB",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseDorName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断医生姓名",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "131F5D2405F14D5693A69A9A094C757F",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "DiagnoseTime",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断时间",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "FB8C8C2339E143F4AA239F60DB5FD66D",
+											"PID": "DFB42188DD3644A1AFB59AFFE73F77EB",
+											"Name": "ValiFlag",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "有效标志",
+											"Annotation": null,
+											"Nodes": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "F624699DCB6C4FED94EB4665627B1547",
+							"PID": "F6BC297BA02F44E196D20CC328E42540",
+							"Name": "OutpSeenRegisterOut",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "D4F98CFCDCD0465CA4B477D98025C89C",
+									"PID": "F624699DCB6C4FED94EB4665627B1547",
+									"Name": "InsuranceSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保就诊号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F7FEA0AFAAE14D1583F0CFD9196591CF",
+									"PID": "F624699DCB6C4FED94EB4665627B1547",
+									"Name": "InsuranceNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "69F49EE3B6464B39A00838083A76A9A5",
+									"PID": "F624699DCB6C4FED94EB4665627B1547",
+									"Name": "HisSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "HIS就诊号",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						},
+						{
+							"ID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+							"PID": "F6BC297BA02F44E196D20CC328E42540",
+							"Name": "OutpFeeUploadIn",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "60333E0FA17C47118D3833BB1295A755",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "InsuranceCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "保险类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "B6AF57BF06474B96AEC9A18F8AD500C6",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "AgentCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "经办人编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "810DA5566D734920B856C9319A59D396",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "AgentName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "经办人姓名",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "963FC1E1A4314787857233F5578CF90C",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "HospitalNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院编号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "12B34866FED54E25809EF48569281977",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "HospitalName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院名称",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "6E20F69DFB8E4A25AC42763ED781E130",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "InsuranceSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保就诊号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "2513E095C2EC4075BFAC1A9F88DD8CE8",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "InsuranceNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "2C677C9E30C64B0DA4BA9F87731471FB",
+									"PID": "BE745A6E1DAB4CCF87C65502F36A5AD7",
+									"Name": "FeeDetail",
+									"DataType": "文本",
+									"NodeType": "数组",
+									"Code": null,
+									"Annotation": null,
+									"Nodes": [
+										{
+											"ID": "8D6ED390EDB34AB297721EB2BED9E3B3",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "FeeDetailNo",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "费用明细流水号",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "CF9AA941F4194C09AA6AF41B42D81C62",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "BillNo",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "单据号",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "1051C1D534474862AD48BE18D914F5AC",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "DiagnoseCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "诊断编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "9DEEEC87F0254F9080389E7E99A14395",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "OutPresSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "外购处方标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "8EC669DC45DB4F93982A501EC150FDE2",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "DisChargeTakeDrugSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "出院带药标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "DB9B7973561C4E499F3FCC19F0DEB2B7",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ProduceDate",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "开单时间",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "801E003312134F39A6CA228D43B02884",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "CountryContentsCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "国家目录代码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "552A3B52CD264210836C569EBC4CFFC2",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ProjecHistCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "项目医院编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "AC6DE03A5B4344D881C10A6B60118B6E",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "Amount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "E671BF83A87742FFB639056E6A5BA795",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "Quantity",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "数量",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "5F0B90A1CC684363A1E9362775CC48BD",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "Price",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "单价",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "7C7505575BDD4238A9423086D459EF7A",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "SingleDrugDosa",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "单次用药剂量",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "3C1B4075A5E74AC18C9F7C4BE913FF94",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "SingleDosaUnit",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "单次用药剂量单位",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "B775D4327EAD490283E2A39B84B013CD",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "UseFrequencyCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "使用频率编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "B5C7F13C2A994CD680955AE1CEF3E749",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "UseFrequencyName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "使用频率名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "060C136E1B0E434F8ADE7E2EAEF47502",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "MedicationDays",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "用药天数",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "A4E62E5D61E443BB910CF11D9ACAD846",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "AdministrationRouteCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "用药途径编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "5165B1E98DAF473C854E365B23F01DEC",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "AdministrationRouteName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "用药途径名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "0CF5F6D9140D48169C2DCE5B6C40A8E1",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "DepartmentCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "开单科室编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "AB218592705D407A89E78A20868BDC84",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "DepartmentName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "开单科室名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "EB6AB998C8E644BFA65DCA164BD889DA",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "DoctorCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "开单医生编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "D95DD93D44DE49208018BE78FDE4D06A",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "DoctorName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "开单医生名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "32F06E698160415A9D0A466C506F9138",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExedeptCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "执行科室编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "6480C99820BE407A9906D6A35AE07DA0",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExedeptName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "执行科室名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "B2D7997BDD43479EAEDEBB4711ECE71E",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExetrCode",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "执行人编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "02C40ED22747405E91113D5B6B3607B4",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExetrName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "执行人姓名",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "E9CC4362A72346DDA3370983CEFE750F",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "AuditSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "医院审批标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "3899E55B260B4D069F75CC54160AF7CE",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExternalInspectionSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "外检标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "2589C465C265420EA9439B22921D6DB1",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExternalInspectionHospitalNo",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "外检医院编码",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "8F4E7986E6354F85922203CBE290C23D",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "BirthFeeSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "生育费用标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "F7739362D50D4EAC9B42D25C8317CBBD",
+											"PID": "2C677C9E30C64B0DA4BA9F87731471FB",
+											"Name": "ExpParam",
+											"DataType": "文本",
+											"NodeType": null,
+											"Code": null,
+											"Annotation": null,
+											"Nodes": [
+												{
+													"ID": "B71A1359B82B4BDB9DBA40CF48C210EB",
+													"PID": "F7739362D50D4EAC9B42D25C8317CBBD",
+													"Name": "EmergencySign",
+													"DataType": "文本",
+													"NodeType": "节点",
+													"Code": "急诊标志",
+													"Annotation": null,
+													"Nodes": null
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "83A736CC53D04771B7352380508345EB",
+							"PID": "F6BC297BA02F44E196D20CC328E42540",
+							"Name": "OutpFeeUploadOut",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "0627E95E310E4894A8EB0C23BB220582",
+									"PID": "83A736CC53D04771B7352380508345EB",
+									"Name": "FeeDetail",
+									"DataType": "文本",
+									"NodeType": "数组",
+									"Code": null,
+									"Annotation": null,
+									"Nodes": [
+										{
+											"ID": "CA1A2074EED64183AD6FC9C79245AF6B",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "FeeDetailNo",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "费用明细流水号",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "D88B0407A2A44A788E1F300202DBE708",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "Amount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "E3758D1BA12947BC8C8837CF54136777",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "Quantity",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "数量",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "6E0FBEE5D8594E33A9A9A1FD2EA82061",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "Price",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "单价",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "453543165B104B57B7E025F5A3A7110A",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "PaymentMax",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "支付上限",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "35EAFF87B33D47A9A92BC67697BF28A3",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "PocketOutRatio",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "自付比例",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "1BF80F6C04024C18B2E03192E61972C8",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "SelfPaymentAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "自费金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "A6CBB059FD1D496988D97893B3331A26",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "PriceOverrunAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "超限价金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "9CA6128046E843D5AC3815AE50A993A2",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "PocketOutAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "自付金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "F071F917517A4803B5B84F844F3BD8D8",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "EligibleAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "符合政策范围金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "87B090F7CB6640EF90808D826B2725B8",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "ProjectLevel",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "收费项目等级",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "5F74B42A1C954B06ACFE28E91A1929AD",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "ProjectCategory",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "医疗收费项目类别",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "A91A08B330EB45C18A5F6A9794C408E1",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "BasicDrugSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "基本药物标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "B72BD0F7C8BA4425A5F56EF5EAB287E5",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "InsuranceNegDrugSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "医保谈判药品标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "5DF2417CCE914648B124ED3C8A8CF9B0",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "ChildDrugSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "儿童用药标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "DFEE18FF821E46FFBC20A1BD101421F0",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "ContentsSpecItemSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "目录特项标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "BDD19BC2B3DD4BDBA76D0CEF3319A862",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "LimitUseSign",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "直报标志",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "AF128BCCFE6742AE907738DCF46DF69F",
+											"PID": "0627E95E310E4894A8EB0C23BB220582",
+											"Name": "Remarks",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "备注",
+											"Annotation": null,
+											"Nodes": null
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "A6551A3818AD43BCB84D1E8786FE828A",
+							"PID": "F6BC297BA02F44E196D20CC328E42540",
+							"Name": "OutpBudgetIn",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "646689CCC7AA4C8A954C67068188CE86",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "InsuranceCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "保险类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F60AFBE3399842E086EC8C1BE2E1EC94",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "AgentCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "经办人编码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "543E90F372D04F21AB0CBADF93F77355",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "AgentName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "经办人姓名",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "3597FE6AC43A48D18ABD8D2168C28AFA",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "HospitalNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院编号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "882BA8F894064FEC9D52C2C20BC5FC1C",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "HospitalName",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院名称",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4187617A805945EFAA7A65469B77A8E4",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "InsureCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "险种类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7B42513F9E794ED194B8891F57070306",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "VoucherCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "就诊凭证类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "BEB11FBA184445FC89CB8C9E27069BEC",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "VoucherCategoryCode",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "就诊凭证编号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "92B5FA82D4D041069506FE61AA713AE0",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "HealthCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医疗类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "68ED338E94C748B9A2627E722C6ED2BF",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "InsuranceNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "8AE512D95BA7451DB6E38A65493DABD7",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "InsuranceSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保就诊号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1BB137B97F4E4B48B5D923088772936E",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "BalanceTotalAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "结算总金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "57804E3B174F4B7BA5AA800BDBE74F5A",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "SelfBalanceWay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "个人结算方式",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7F30A3E67FE847B4A26E4EBDDE2C30C7",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "BillNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "单据号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C7D9AD9D7F054272B16FE76F11BAAAA5",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "AccountPaySign",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "个人账户使用标志",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "08C013D427F14201914A03B2D317B3CA",
+									"PID": "A6551A3818AD43BCB84D1E8786FE828A",
+									"Name": "HisSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "HIS就诊号",
+									"Annotation": null,
+									"Nodes": null
+								}
+							]
+						},
+						{
+							"ID": "F16617F39A6F4E018046528E7DB6F4F6",
+							"PID": "F6BC297BA02F44E196D20CC328E42540",
+							"Name": "OutpBudgetOut",
+							"DataType": "文本",
+							"NodeType": null,
+							"Code": null,
+							"Annotation": null,
+							"Nodes": [
+								{
+									"ID": "C8F1D1449BC44314AF9BEC78E3348C81",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "InsuranceSeenNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保就诊号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "A9FF35C71895440894BB6963A491B516",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "InsuranceNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医保号",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1A238882E1624CA998E49621E8D176B5",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "CertType",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "证件类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "14ECD713300F4DB18D26133490476C41",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "CertNo",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "证件号码",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "3FC50DE828D8483BA930EC6914BDB3CD",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "Name",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "姓名",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "0C32345E696D47CBABB5D9F1748B11C2",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "Sex",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "性别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "57974021808B431089A3F82A1A17B824",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "Age",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "年龄",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "0953C7981332472594B161E9FEAFFFF0",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "Birthday",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "出生日期",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4495EB5BC8E8424E9F7A22EF7E209F5E",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "Nationality",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "民族",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "461385EECB434AF4B5C4D5E3186CC470",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "InsureCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "险种类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "DA6E959E657C4FBD9A71FD8E6DE155A5",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "StaffCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "人员类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "EF3CD2E964ED47C094D59434CDB987F1",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "CvlservFlag",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "公务员标志",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "760C769475DE4C37A343116C828A3503",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "BalanceDate",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "结算时间",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4FDA122FA7614EC3A27A302AB7C57626",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "VoucherCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "就诊凭证类型",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "80DFD617CF3544419F6FBF32555C8536",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "HealthCategory",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医疗类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C91B113D9966437DAC5E465670599AE6",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "BalanceTotalAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "结算总金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "7C7A6FBECB6E48ACB1C8E89A49EE94E0",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "SelfPaymentAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "自费金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "03D726A86B9448DA98324B2669D82438",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "PriceOverrunAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "超限价金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "A5D6D4B5EB5C407FAC0C7684AD4392C8",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "PocketOutAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "自付金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C4B03F4809754B1AB235F519C86B48B4",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "EligibleAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "符合政策范围金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "49A3DFE33B1E48D6AA52DD9BD2E05085",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "ThisTimeStartingLinePaymentAmount",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "实际支付起付线",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F348CF233BBB4B928E463F27026E8578",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "HifpPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "基本医疗保险统筹基金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "9D72D1A75C3C44FE851BF05F6F1D421C",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "PoolPropSelfPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "基本医疗保险统筹基金支付比例",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "FB8D489A4E664DB789237B84F4DDAFB3",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "CvlservPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "公务员医疗补助资金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "83BB677F60B04C3AB87022E4E9356AA9",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "HifesPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "企业补充医疗保险基金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "46C02A6258314144AAD52B53913334E4",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "HifmiPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "居民大病保险资金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "BFC78DBE0C944A8DB05132FB64DBB31B",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "HifobPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "职工大额医疗费用补助基金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "4491DC87E7114D94A269126DA37EB40C",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "MafPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医疗救助基金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "424C036A9EC24F808810468D73DCF14B",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "OthPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "其他支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "C08168150E3A408A92E9FD06327A1DC7",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "FundPaySumamt",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "基金支付总额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F0C423AF825248A2A8FA29C752A2F923",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "PsnPartAmt",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "个人负担总金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "937F2A639DF643408A80EB286EF116AA",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "AcctPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "个人账户支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "D1368217B10A422FAFEADF4650C73C1C",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "PsnCashPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "个人现金支出",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "5272B0CCBC8546D499ECA6A148718183",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "HospPartAmt",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医院负担金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "F5543B24626448F7A7E65D0E704C891C",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "Balc",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "余额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1E37172428DF4767A853163A52AE37AC",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "AcctMulaidPay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "个人账户共济支付金额",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "ADF60AB2D112464BBC36A6DECD88B4A6",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "MedinsSetlId",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "医药机构结算ID",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "76FA6F779F724B2FA77D1720156B02DA",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "ClrOptins",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "清算经办机构",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "9EAFFDA0F295484DBB60742E4CB8EA2A",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "ClrWay",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "清算方式",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "AC164914D4E94C75BCF2B6046D7F8B44",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "ClrType",
+									"DataType": "文本",
+									"NodeType": "节点",
+									"Code": "清算类别",
+									"Annotation": null,
+									"Nodes": null
+								},
+								{
+									"ID": "1691014F865B471AB0745C770B2289E6",
+									"PID": "F16617F39A6F4E018046528E7DB6F4F6",
+									"Name": "SetlDetail",
+									"DataType": "文本",
+									"NodeType": "数组",
+									"Code": null,
+									"Annotation": null,
+									"Nodes": [
+										{
+											"ID": "FCD14F4E3D7C42C795A905805A40B6E5",
+											"PID": "1691014F865B471AB0745C770B2289E6",
+											"Name": "FundPayType",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "基金支付类型",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "64A7021C33E847C9AB81E58BF4305E81",
+											"PID": "1691014F865B471AB0745C770B2289E6",
+											"Name": "EligibleAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "符合政策范围金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "42F4DE30B89D47DF8C45D6E4D5AEBF79",
+											"PID": "1691014F865B471AB0745C770B2289E6",
+											"Name": "CrtPayLimitAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "本次可支付限额金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "E2A77850BCAD4F17971BBDFCF09BC52D",
+											"PID": "1691014F865B471AB0745C770B2289E6",
+											"Name": "FundPayAmount",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "基金支付金额",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "84C4DACCCD5741118DA50C1105DDEC03",
+											"PID": "1691014F865B471AB0745C770B2289E6",
+											"Name": "FundPayTypeName",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "基金支付类型名称",
+											"Annotation": null,
+											"Nodes": null
+										},
+										{
+											"ID": "4B7F022E5B6C4171B36B597D1D9E7812",
+											"PID": "1691014F865B471AB0745C770B2289E6",
+											"Name": "SetlProcInfo",
+											"DataType": "文本",
+											"NodeType": "节点",
+											"Code": "结算过程信息",
+											"Annotation": null,
+											"Nodes": null
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"Strsplit": {}
+		},
+		"9E5515061B0E48D693FAD56997E2339B": {
+			"name": "P_S_ERRMSG",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"BF9ED7AA4EBB487D917C0DC1059CB12A": {
+			"name": "P_S_InsuranceNo",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"C9F0333F98EE4FFF8F9E21598D4587F4": {
+			"name": "P_S_InsuranceSeenNo",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"D21D0E50A5AB41F5935306FC096BCBCF": {
+			"name": "P_S_BalanceNo",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"5B4892F3D3D24475B2B11FEAFFD5F31E": {
+			"name": "P_S_InsuranceSetlNo",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"99F15340559441038AC15FF633CA90A1": {
+			"name": "P_S_OUTPUT",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"56822A65A04F4950B159D8922CDAFB5C": {
+			"name": "P_S_INIT",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"C49F033ADE7B4B3B8F9A43DAA9FFBF64": {
+			"name": "P_S_BUSINAME",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"C6B1EDC190A545D29C87912305E0BD75": {
+			"name": "P_S_MRegionDivideCode",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"024DBFF3CA804B0AB607E8952E85FC56": {
+			"name": "P_S_MSGID_TMP",
+			"DataType": 2,
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"d0cc9177dd074598bf0bbc582d38ab3d": {
+			"name": "P_J_2201Output",
+			"DataType": 33,
+			"note": "",
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"5480c2fb42d94b66859b7bcb248ed8bb": {
+			"name": "P_J_2201返回",
+			"DataType": 33,
+			"note": "",
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"dffcba68f8f440c9bcbd85213da1f206": {
+			"name": "P_J_2201Input",
+			"DataType": 33,
+			"note": "",
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		},
+		"89f29c9a814141fc87237ed22f17f3df": {
+			"name": "P_S_HisSeenNo",
+			"DataType": 2,
+			"note": "",
+			"LifeCycle": "单次",
+			"JsonNodes": [],
+			"Strsplit": {}
+		}
+	},
+	"RefGlobarVar": {
+		"9E1F23BEB81B49809EF0AAB369787DCB": 0
+	},
+	"ExpressionDic": {
+		"FC8DF2AB68F33D40C88A4D80F9AFCE4ED5": {
+			"Content": [
+				"return ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "0744E3F2638B4443822B50BC4589BC99",
+					"Text": "P_S_RESULT",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 2,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 44
+				},
+				"==\"1\" ?true:false;"
+			],
+			"FunctionName": "FC8DF2AB68F33D40C88A4D80F9AFCE4ED5",
+			"ReturnType": "bool"
+		},
+		"FC7D9FC58C24394A788DA630E887A654F6": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 243,
+					"Id": "5480c2fb42d94b66859b7bcb248ed8bb",
+					"Text": "P_J_2201返回",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nJsonDataItem json=new JsonDataItem();\njson[\"code\"].SetValue(\"1\");\njson[\"error\"].SetValue(\"成功\");\njson[\"data\"].SetValue(",
+				{
+					"Tag": "",
+					"StartPos": 22,
+					"EndPos": 249,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				");\njson[\"data\"][\"OutpSeenRegisterOut\"].SetValue(",
+				{
+					"Tag": "",
+					"StartPos": 45,
+					"EndPos": 284,
+					"Id": "5480c2fb42d94b66859b7bcb248ed8bb",
+					"Text": "P_J_2201返回",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterOut\"]);\n",
+				"return \t json; "
+			],
+			"FunctionName": "FC7D9FC58C24394A788DA630E887A654F6",
+			"ReturnType": "ZLSoft.Applet.Expression.JsonDataItem"
+		},
+		"FCE711E2FAED574A4A89F667CDD4082232": {
+			"Content": [
+				"if(",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "57972BDC1A5A4666AB2827DDC1F8D300",
+					"Text": "S_J_INPUT",
+					"IsNotes": false,
+					"ContentType": 2,
+					"DataType": 33,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 43
+				},
+				"==null){\r\n\treturn null;\r\n} \r\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "57972BDC1A5A4666AB2827DDC1F8D300",
+					"Text": "S_J_INPUT",
+					"IsNotes": false,
+					"ContentType": 2,
+					"DataType": 33,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 43
+				},
+				";"
+			],
+			"FunctionName": "FCE711E2FAED574A4A89F667CDD4082232",
+			"ReturnType": "ZLSoft.Applet.Expression.JsonDataItem"
+		},
+		"FC3442EF11D4FA48DB95319A064101904D": {
+			"Content": [
+				"return ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "1D9A9B0F5EFF49139EAD77036CB1492F",
+					"Text": "P_S_HospitalNo",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 2,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 48
+				},
+				"+\r\n       DateTime.Now.ToString(\"yyyyMMddHHmmssffff\");"
+			],
+			"FunctionName": "FC3442EF11D4FA48DB95319A064101904D",
+			"ReturnType": "string"
+		},
+		"FC167934B024F540B3B19919A18BD49910": {
+			"Content": [
+				"return DateTime.Now.ToString(\"yyyy-MM-dd HH:mm:ss\");"
+			],
+			"FunctionName": "FC167934B024F540B3B19919A18BD49910",
+			"ReturnType": "string"
+		},
+		"FCD923386DDF6548C9A07982AD834262B0": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 33,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 43
+				},
+				"==null)\r\nreturn null;\r\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 33,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 43
+				},
+				"[\"SignInOut\"][\"SignInNo\"].ToText();"
+			],
+			"FunctionName": "FCD923386DDF6548C9A07982AD834262B0",
+			"ReturnType": "string"
+		},
+		"FCD9E62A815AAD4B5B9BEA48896DD52E8E": {
+			"Content": [
+				"if(",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "92D983E4B94C4B7EBC5D3AAB1EDCB37B",
+					"Text": "P_J_2401Input",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 33,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 47
+				},
+				"==null){\r\n\treturn null;\r\n}\r\n \r\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "92D983E4B94C4B7EBC5D3AAB1EDCB37B",
+					"Text": "P_J_2401Input",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 33,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 47
+				},
+				".ToString();"
+			],
+			"FunctionName": "FCD9E62A815AAD4B5B9BEA48896DD52E8E",
+			"ReturnType": "string"
+		},
+		"FC2DD2DC0D0ADE4BD9BE231055ED6966D2": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"AgentCode\"].ToText(); "
+			],
+			"FunctionName": "FC2DD2DC0D0ADE4BD9BE231055ED6966D2",
+			"ReturnType": "string"
+		},
+		"FC4FEDEC22A8014F31A8FE9E1757E15303": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"AgentName\"].ToText(); "
+			],
+			"FunctionName": "FC4FEDEC22A8014F31A8FE9E1757E15303",
+			"ReturnType": "string"
+		},
+		"FCF8D089C2A4EF4FB6B5A77A85872268E3": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"HospitalNo\"].ToText(); "
+			],
+			"FunctionName": "FCF8D089C2A4EF4FB6B5A77A85872268E3",
+			"ReturnType": "string"
+		},
+		"FC6A4D18CD12374360B803AC5C7830409C": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"HospitalName\"].ToText(); "
+			],
+			"FunctionName": "FC6A4D18CD12374360B803AC5C7830409C",
+			"ReturnType": "string"
+		},
+		"FCC80C062F417346609607B35AF653512F": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"RegionDivideCode\"].ToText(); "
+			],
+			"FunctionName": "FCC80C062F417346609607B35AF653512F",
+			"ReturnType": "string"
+		},
+		"FC845B9AA76D1140A49B4E42A61DEF30E1": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"InsuranceNo\"].ToText(); "
+			],
+			"FunctionName": "FC845B9AA76D1140A49B4E42A61DEF30E1",
+			"ReturnType": "string"
+		},
+		"FCE23D8EBD4BE54B82A8C507A0199D16B7": {
+			"Content": [
+				"return ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "99F15340559441038AC15FF633CA90A1",
+					"Text": "P_S_OUTPUT",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 2,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 44
+				},
+				".Split('|')[0] ;"
+			],
+			"FunctionName": "FCE23D8EBD4BE54B82A8C507A0199D16B7",
+			"ReturnType": "string"
+		},
+		"FC569452A7B235473D91B47732ABAE4E3C": {
+			"Content": [
+				"return ",
+				{
+					"Tag": "",
+					"StartPos": 0,
+					"EndPos": 0,
+					"Id": "99F15340559441038AC15FF633CA90A1",
+					"Text": "P_S_OUTPUT",
+					"IsNotes": false,
+					"ContentType": 0,
+					"DataType": 2,
+					"DefaultValue": null,
+					"Parameter": null,
+					"ExtendNode": null,
+					"TextStartPos": 34,
+					"TextEndPos": 44
+				},
+				".Split('|')[1] ;"
+			],
+			"FunctionName": "FC569452A7B235473D91B47732ABAE4E3C",
+			"ReturnType": "string"
+		},
+		"FC1B0492F6AC56471C809D3010512B2451": {
+			"Content": [
+				"return \"1\"; "
+			],
+			"FunctionName": "FC1B0492F6AC56471C809D3010512B2451",
+			"ReturnType": "string"
+		},
+		"FC81FDAC0E54D44CFB886A39BB6ACAA16D": {
+			"Content": [
+				"return \"门诊登记\"; "
+			],
+			"FunctionName": "FC81FDAC0E54D44CFB886A39BB6ACAA16D",
+			"ReturnType": "string"
+		},
+		"FCBC66D64083664926880CD1BD51F92AD5": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"MRegionDivideCode\"].ToText(); "
+			],
+			"FunctionName": "FCBC66D64083664926880CD1BD51F92AD5",
+			"ReturnType": "string"
+		},
+		"FC334E5136AAD14703814F5C02C2491202": {
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"MsgId\"].ToText(); "
+			],
+			"FunctionName": "FC334E5136AAD14703814F5C02C2491202",
+			"ReturnType": "string"
+		},
+		"FC78973c05d190415783c78f597ba62746": {
+			"FunctionName": "FC78973c05d190415783c78f597ba62746",
+			"ReturnType": "string",
+			"Content": [
+				"if (",
+				{
+					"Tag": "",
+					"StartPos": 4,
+					"EndPos": 231,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"==null)\nreturn null;\nreturn ",
+				{
+					"Tag": "",
+					"StartPos": 7,
+					"EndPos": 234,
+					"Id": "DDD4EB7310AF45D2A8AC5FA5DEBA44FB",
+					"Text": "P_J_Input",
+					"IsNotes": false,
+					"ContentType": "0",
+					"DataType": "33",
+					"DefaultValue": "",
+					"Parameter": [],
+					"ExtendNode": "",
+					"TextStartPos": 0,
+					"TextEndPos": 0
+				},
+				"[\"OutpSeenRegisterIn\"][\"HisSeenNo\"].ToText(); "
+			]
+		}
+	}
+}
