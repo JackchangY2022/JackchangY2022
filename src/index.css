@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .workflow-node {
+    @apply bg-white border-2 border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .workflow-node.selected {
+    @apply border-primary-500 shadow-lg;
+  }
+  
+  .workflow-node.start {
+    @apply bg-green-50 border-green-300;
+  }
+  
+  .workflow-node.end {
+    @apply bg-red-50 border-red-300;
+  }
+  
+  .workflow-node.process {
+    @apply bg-blue-50 border-blue-300;
+  }
+  
+  .workflow-node.condition {
+    @apply bg-yellow-50 border-yellow-300;
+  }
+  
+  .workflow-node.error {
+    @apply bg-red-50 border-red-300;
+  }
+}
