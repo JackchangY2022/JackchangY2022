@@ -1,0 +1,39 @@
+{
+  "ProductName": "数据处理平台",
+  "ServiceName": "ZLDPPRunService",
+  "GroupName": "中联基础系统",
+  "ProductVersion": "3.1.1",
+  "PublishDate": "2024/03/21",
+  "LicenseDir": "App_Data",
+  "DefaultPort": 7080,
+  "DefaultProxyPort": 9070,
+  "MainDLLFileName": "ZLDPPRunService.dll",
+  "AutoUpdateMinVer": "2.7.1",
+  "SCRequiredVer": "2.6.0",
+  "BackupList": [
+    "App_Data/*.db",
+    "App_Data/*.lixc",
+    "sysconfig.json",
+    "appsettings.json"
+  ],
+  "Appsettings": {
+    "AppIDNodePath": "ZLUDS:appId",
+    "SetRefUrlList": [
+      {
+        "NodePath": "ZLUDS:udsUrl",
+        "RefServiceName": "zluds",
+        "IsUrlNeedSlash": false
+      }
+    ]
+  },
+  "RelationList": [
+    {
+      "ServiceName": "zluds",
+      "ForceMinVersion": "1.2.6",
+      "Required": true,
+      "DefaultCheck": false,
+      "SuggestMinVersion": "1.4.0"
+    }
+  ],
+  "AIOVisible": false
+}

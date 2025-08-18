@@ -1,0 +1,16 @@
+
+{
+  "AppName": "数据处理平台",
+  "ProcessName": "ZLDPPRunService",
+  "Port": 7080,
+  "IISWebSite": {
+    //网站是否需要管理员权限
+    "RequireAdmin": true,
+    //最大工作进程数，缺省值 1。注意：只有服务程序本身支持多进程并行运行，才能设置为大于 1 的数字。如果服务程序的并发量正常，该参数应设置为 1。
+    "MaxProcesses": 1,
+    //禁用重叠回收
+    "DisallowOverlappingRotation": true,
+    //执行回收的特定时间，缺省值：null。示例："02:00:00"，表示每日两点整执行回收。如果服务程序没有内存问题，不需要启用定时回收。
+    "RecycleTime": null
+  }
+}
